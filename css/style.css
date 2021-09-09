@@ -1,0 +1,42 @@
+/*
+font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif;
+*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  font-family: "Karla", sans-serif;
+  color: hsl(273, 4%, 51%);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu ul {
+  display: flex;
+  gap: 3rem;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li:hover,
+.menu ul li:visited {
+  color: hsl(270, 9%, 17%);
+  cursor: pointer;
+}
+.menu ul li:last-child {
+  background-color: hsl(270, 9%, 17%);
+}
