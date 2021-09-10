@@ -6,6 +6,9 @@ font-family: 'Karla', sans-serif;
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "DM Serif Display", serif;
+}
 
 .attribution {
   font-size: 11px;
@@ -29,6 +32,9 @@ header {
   margin: 0 auto;
 }
 
+.menu {
+  z-index: 1;
+}
 .menu ul {
   display: flex;
   gap: 2rem;
@@ -55,18 +61,88 @@ header {
 }
 .line {
   border: 1px solid white;
+  width: 30%;
+}
+.line-black {
+  border: 1px solid hsl(270, 9%, 17%);
   width: 20%;
 }
 .banner-content {
+  position: relative;
   padding-top: 100px;
   display: flex;
   justify-content: center;
   gap: 80px;
 }
 .heading-title {
-  font-size: 37px;
+  font-size: 4rem;
   margin-top: 40px;
+  font-weight: 400;
+  line-height: 1;
 }
 .banner-img-box img {
   height: 100vh;
+}
+.right-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.left-pattern {
+  position: absolute;
+  bottom: -400px;
+  left: 0;
+}
+.patterns {
+  width: 250px;
+}
+.banner-txt-box p {
+  font-weight: 400;
+  line-height: 2;
+  margin-top: 30px;
+  font-family: "Karla", sans-serif;
+}
+.btn {
+  margin-top: 20px;
+  background-color: hsl(0, 0%, 98%);
+  padding: 13px 35px 13px 35px;
+  color: hsl(270, 9%, 17%);
+  border: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.werd {
+  margin-top: 250px;
+}
+
+.grid {
+  display: grid;
+  margin-top: 100px;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.item h3 {
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+}
+.item p {
+  margin-top: 1.5rem;
+  color: hsl(273, 4%, 51%);
+  font-family: "Karla", sans-serif;
+  line-height: 1.8;
+}
+.cta {
+  margin-top: 200px;
+  display: flex;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(256, 26%, 20%);
+}
+.cta-heading-title {
+  font-size: 2rem;
 }
