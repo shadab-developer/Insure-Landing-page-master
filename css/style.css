@@ -60,11 +60,11 @@ header {
   height: 100vh;
 }
 .line {
-  border: 1px solid white;
+  border-bottom: 0.1mm solid white;
   width: 30%;
 }
 .line-black {
-  border: 1px solid hsl(270, 9%, 17%);
+  border-bottom: 0.1mm solid hsl(270, 9%, 17%);
   width: 20%;
 }
 .banner-content {
@@ -142,7 +142,73 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: hsl(256, 26%, 20%);
+  position: relative;
 }
 .cta-heading-title {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
+}
+.box {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.cta-btn {
+  width: 180px;
+
+  cursor: pointer;
+}
+.pattern-right {
+  position: absolute;
+  bottom: -100;
+  right: 0;
+}
+.footer {
+  background-color: #fafafa;
+  margin-top: 200px;
+  padding-top: 70px;
+}
+.social-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  color: hsl(273, 4%, 51%);
+}
+.social-icon:hover,
+.social-icon:active {
+  color: hsl(270, 9%, 17%);
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.line-break {
+  border-bottom: 0.1mm solid hsl(273, 4%, 51%);
+  margin-top: 40px;
+}
+.grid--4-cols {
+  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-menu h3 {
+  color: hsl(273, 4%, 51%);
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.footer-menu ul li {
+  list-style: none;
+}
+.footer-menu ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
 }
