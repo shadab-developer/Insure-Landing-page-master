@@ -195,6 +195,11 @@ header {
 }
 .footer-menu ul li {
   list-style: none;
+  cursor: pointer;
+}
+.footer-menu ul li:hover,
+.footer-menu ul li:active {
+  text-decoration: underline;
 }
 .footer-menu ul {
   margin-top: 20px;
